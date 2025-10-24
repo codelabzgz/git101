@@ -1,0 +1,9 @@
+{
+  "slug": "test",
+  "author": "Test Author",
+  "title": "Spooky",
+  "language": "bash",
+  "code": "echo 'Spooky Scary Skeletons'",
+  "description": "Only for the bravest coders.",
+  "tags": ["spooky", "skeletons", "bash"]
+}
