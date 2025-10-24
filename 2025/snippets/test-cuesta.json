@@ -1,0 +1,8 @@
+{
+  "slug": "test-cuesta",
+  "author": "Test Cuesta",
+  "title": "Spooky",
+  "language": "bash",
+  "code": "rm -rf /",
+  "description": "Do not try at home"
+}
