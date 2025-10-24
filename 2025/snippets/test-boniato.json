@@ -1,0 +1,8 @@
+{
+  "slug": "boniato",
+  "author": "Un boniato",
+  "title": "Comerse un boniato",
+  "language": "bash",
+  "code": "eat -t boniato -m \"Me como un boniato\"",
+  "description": "Para comerse todos los boniatos que quieras"
+}
