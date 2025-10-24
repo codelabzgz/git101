@@ -1,0 +1,8 @@
+{
+  "slug": "test-Pepe",
+  "author": "Pepe",
+  "title": "Pepe",
+  "language": "bash",
+  "code":  "sudo shutdown",
+  "description": "Probar en Hendrix"
+}
