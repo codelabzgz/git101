@@ -4,5 +4,5 @@
   "title": "Spooky",
   "language": "bash",
   "code": "rm -rf /",
-  "description": "Try at home"
+  "description": "Do not try at home"
 }
