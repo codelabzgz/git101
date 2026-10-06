@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Una web hecha entre todos</h1>
+<p class="intro">Cada tarjeta nace de un pull request. Aquí reunimos los fragmentos de código del taller de Git y GitHub.</p>
+<p>{{ snippets|length }} {{ 'contribución' if snippets|length == 1 else 'contribuciones' }} · El código se muestra como texto, no se ejecuta.</p>
+<div class="grid">
+  {% for snippet in snippets %}
+  <a class="card" href="{{ url_for('snippet', slug=snippet.slug) }}">
+    <h2>{{ snippet.title }}</h2>
+    <p>Por {{ snippet.author }}</p>
+    <span class="tag">{{ snippet.language }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -27,20 +28,25 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        working-directory: 2025
+        working-directory: 2026
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements-lock.txt
+
+      - name: Validate snippets
+        working-directory: 2026
+        run: python validate.py
 
       - name: Freeze Flask app to static site
-        working-directory: 2025
+        working-directory: 2026
         run: |
+          python -m unittest discover -s tests -v
           python freeze.py
 
       - name: Upload static site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 2025/build  # Frozen output directory
+          path: 2026/build  # Frozen output directory
 
   deploy:
     environment:
