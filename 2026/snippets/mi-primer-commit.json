@@ -1,0 +1,8 @@
+{
+  "slug": "mi-primer-commit",
+  "author": "CodeLab",
+  "title": "Mi primer commit",
+  "language": "git",
+  "code": "git switch -c mi-contribucion\ngit add 2026/snippets/mi-snippet.json\ngit commit -m \"Añade mi contribución al taller\"\ngit push -u origin mi-contribucion",
+  "description": "Contribución de ensayo para Git 101 2026. Antes de ejecutar estos comandos, crea mi-snippet.json con los seis campos del ejemplo. git add selecciona el fichero y git commit guarda una versión local. El push sube la rama a tu fork; después abre el pull request."
+}
