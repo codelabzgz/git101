@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<article>
+  <span class="tag">{{ snippet.language }}</span>
+  <h1>{{ snippet.title }}</h1>
+  <p>Por {{ snippet.author }}</p>
+  <pre><code>{{ snippet.code }}</code></pre>
+  <p>{{ snippet.description }}</p>
+  <a href="{{ url_for('index') }}">← Volver a las contribuciones</a>
+</article>
+{% endblock %}

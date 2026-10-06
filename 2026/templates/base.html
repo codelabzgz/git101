@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ snippet.title ~ ' | ' if snippet is defined else '' }}Git 101 · CodeLab 2026</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='codelabzgz-logo.png') }}">
+</head>
+<body>
+  <header><div class="header-inner">
+    <a class="brand" href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='codelabzgz-logo.png') }}" alt="CodeLab" width="48" height="48">
+      <span>Git 101 <small>Edición 2026</small></span>
+    </a>
+    <a href="https://github.com/codelabzgz/git101">Repositorio en GitHub</a>
+  </div></header>
+  <main>{% block content %}{% endblock %}</main>
+  <footer>CodeLab · EINA · Universidad de Zaragoza<br>
+    <a href="mailto:codelabzgz@unizar.es">codelabzgz@unizar.es</a> · <a href="https://codelabzgz.dev">codelabzgz.dev</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "slug": "hola",
+  "author": "CodeLab",
+  "title": "Hola, mundo",
+  "language": "python",
+  "code": "print(\"Hola desde CodeLab!\")",
+  "description": "Snippet de ejemplo. Copia este fichero, cambia el slug (debe coincidir con el nombre del fichero) y abre tu pull request."
+}

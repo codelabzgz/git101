@@ -1,19 +1,24 @@
 name: Flask App Validation
 
+permissions:
+  contents: read
+
 on:
   push:
     paths:
-      - "2025/**"
+      - "2026/**"
+      - ".github/workflows/**"
   pull_request:
     paths:
-      - "2025/**"
+      - "2026/**"
+      - ".github/workflows/**"
 
 jobs:
   test:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 2025
+        working-directory: 2026
 
     steps:
       - name: Checkout repository
@@ -26,12 +31,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r requirements-lock.txt
 
       - name: Validate snippets JSON
-        run: python -m json.tool snippets/*.json
+        run: python validate.py
 
-      - name: Run Flask app (smoke test)
+      - name: Test validation, pages, export and Git exercise
         run: |
-          python -m flask --app app.py routes
+          python -m unittest discover -s tests -v
+      - name: Build static site
+        run: python freeze.py
 
