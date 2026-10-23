@@ -1,0 +1,8 @@
+{
+  "slug": "PR",
+  "author": "Martispro",
+  "title": "Haciendo un pull request",
+  "language": "python && c++",
+  "code": "#include <iostream> #include <cstdlib> using namespace std; int main(){srand(std::time(nullptr));unsigned secreto=(rand()%100)+1;unsigned intento; while(true){cout << 'introduce tu intento: '; cin intento; if (intento==secreto){cout<<'Ganaste';break;}cout<<(intento<secreto ?'El número es más alto' : 'El número es más bajo')}}",
+  "description": "Progrmador de python y c++ dispuesto a aprender todo lo posible."
+}
