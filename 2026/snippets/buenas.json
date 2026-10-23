@@ -1,0 +1,8 @@
+{
+  "slug": "buenas",
+  "author": "Javier",
+  "title": "Buenas",
+  "language": "gdscript",
+  "code": "get_tree().quit()",
+  "description": "cerrar to"
+}
